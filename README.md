@@ -54,10 +54,13 @@ _**Get-Help -Name "Update-Domain" -Full**_
 **EXAMPLE IS BELOW**
 
     EXAMPLE
-        Get-MsolUser | Update-Upn -Domain "contoso.com"
-        Get-MsolUser | Update-Upn -Dn "contoso.com"
-        Get-MsolUser | Update-Upn "contoso.com"
-        Get-MsolUser | Update-Upn -Domain "contoso.com" -Verbose
+        Get-MsolUser | Update-Domain -Domain "contoso.com"
+        Get-MsolUser | Update-Domain -Dn "contoso.com"
+        Get-MsolUser | Update-Domain "contoso.com"
+        Get-MsolUser | Update-Domain -Domain "contoso.com" -Verbose
+        Get-MsolUser | Where-Object{$_.UserPrincipalName -like "*@contoso.onmicrosoft.com*"} | Update-Upn "contoso"
+        Get-MsolUser | Where-Object{$_.UserPrincipalName -like "*@contoso.onmicrosoft.com*"} | Update-Upn "contoso" -Verbose
+        Get-MsolUser | Where-Object{$_.UserPrincipalName -like "*@contoso.onmicrosoft.com*"} | Update-Upn "contoso" -Verbose -WhatIf
         --------------------------------------------------------------------------------------
         --This sets all the users domain in Office 365 to *contoso.com*--
         ** fabikram@contoso.onmicrosoft.com  to  fabikram@contoso.com **

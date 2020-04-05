@@ -71,3 +71,4 @@ _**Get-Help -Name "Update-Domain" -Full**_
     NOTES
         When Using a CSV File, remember to name the column header which has the usernames as *UserPrincipalName*
 
+☺️ for further inquiries reach out to [Ogie](https://www.linkedin.com/in/ibhadogiemu-okougbo-311a5ab3)

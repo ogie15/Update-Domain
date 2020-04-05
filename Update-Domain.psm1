@@ -7,10 +7,10 @@ function Update-Domain {
         This works together with the *Get-Msoluser* CMDLET 
         This also works with a CSV file with a column named *UserPrincipalName* to bulk update Office 365 User's Domain
     .EXAMPLE
-        Get-MsolUser | Update-Upn -Domain "contoso.com"
-        Get-MsolUser | Update-Upn -Dn "contoso.com"
-        Get-MsolUser | Update-Upn "contoso.com"
-        Get-MsolUser | Update-Upn -Domain "contoso.com" -Verbose
+        Get-MsolUser | Update-Domain -Domain "contoso.com"
+        Get-MsolUser | Update-Domain -Dn "contoso.com"
+        Get-MsolUser | Update-Domain "contoso.com"
+        Get-MsolUser | Update-Domain -Domain "contoso.com" -Verbose
         --------------------------------------------------------------------------------------
         --This sets all the users domain in Office 365 to *contoso.com*--
         ** fabikram@contoso.onmicrosoft.com  to  fabikram@contoso.com **

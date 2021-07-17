@@ -66,7 +66,7 @@ _**Get-Help -Name "Update-Domain" -Full**_
         ** fabikram@contoso.onmicrosoft.com  to  fabikram@contoso.com **
         ** ibhadogiemu@contoso.onmicrosoft.com  to  ibhadogiemu@contoso.com **       
         ======================================================================================
-        Import-Csv -Path .\DomainList.csv | Update-Upn -Domain "contoso.com"
+        Import-Csv -Path .\DomainList.csv | Update-Domain -Domain "contoso.com"
         --------------------------------------------------------------------------------------
         --This sets all the users domain in the CSV File on Office 365 to *contoso.com*--
         ** fabikram@contoso.onmicrosoft.com  to  fabikram@contoso.com **
